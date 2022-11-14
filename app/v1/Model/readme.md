@@ -1,5 +1,5 @@
 
-Usermodel.py
+# User_model.py
 
 Nuestra base de datos constará de dos tablas, una para almacenar los 
 usuarios llamada user y otra tabla llamada todo que almacenará las el
@@ -12,3 +12,5 @@ como clave primaria y autoincrement.
 
 Después añadimos la clase Meta dentro de la clase User que contendrá la 
 conexión a la base de datos.
+
+Viaje_model.py PENDIENTE A COLOCAR LA EXPLICACION DE LA TABLA 

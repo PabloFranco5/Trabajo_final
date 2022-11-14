@@ -1,6 +1,6 @@
 Conexion a la base de datos
 
---settings.py--
+# settings.py
 
 la libreria os se usa para  leer las variables de entorno, la clase BaseSettings
 y la función load_dotenv de la librería python-dotenv la cual se encargará de leer 
@@ -14,7 +14,7 @@ Los valores los asignamos gracias a la función getenv de la librería os la cua
 el nombre que les dimos a las variables de entorno en el archivo .env y si existen 
 retornan su valor. Si no es así, devolverá None.
  
---db.py--
+# db.py
 
 Lo que estamos haciendo primero es crear una instancia de clase Settings que creamos 
 unos pasos más atrás y después guardar las variables de entorno de la conexión en constantes.

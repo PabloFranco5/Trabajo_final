@@ -6,11 +6,15 @@ from app.v1.Utils.db import db
 from .user_model import User
 
 
-class Todo(peewee.Model):
-    title = peewee.CharField()
-    created_at = peewee.DateTimeField(default=datetime.now)
-    is_done = peewee.BooleanField(default=False)
-    user = peewee.ForeignKeyField(User, backref="todos")
+class Resumen_viaje(peewee.Model):
+    Fecha_servicio = peewee.DateTimeField(default=datetime.now)
+    Lugar_Salida = peewee.CharField
+    Lugar_Destino = peewee.CharField
+    Trayecto = peewee.CharField
+    Tiempo_trayecto = peewee.DateTimeField
+    Distancia_recorrida = peewee.DateTimeField
+    Clima = peewee.DateTimeField
+    Username = peewee.ForeignKeyField(User, backref="todos")
 
     class Meta:
         database = db
