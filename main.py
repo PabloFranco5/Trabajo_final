@@ -1,11 +1,8 @@
+
 from fastapi import FastAPI
-from app.v1.Scripts.create_tables import create_tables
+
+from app.v1.Router.user_router import router as user_router
 
 app = FastAPI()
 
-
-@app.get('/')
-def home():
-    return {"message": "Hello World"}
-
-create_tables()
+app.include_router(user_router)

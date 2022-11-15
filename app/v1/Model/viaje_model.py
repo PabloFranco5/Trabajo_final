@@ -18,3 +18,5 @@ class Resumen_viaje(peewee.Model):
 
     class Meta:
         database = db
+
+        
