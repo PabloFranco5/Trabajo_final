@@ -4,9 +4,21 @@ from pydantic import EmailStr
 
 
 class UserBase(BaseModel):
-    email: EmailStr = Field(...
-    )
     username: str = Field(
+        ...,
+        min_length=3,
+        max_length=50
+    )
+    email: EmailStr = Field(
+        ...,
+        example="myemail@cosasdedevs.com"
+    )
+    punto_de_salida: str = Field(
+        ...,
+        min_length=3,
+        max_length=50
+    )
+    punto_de_llegada: str = Field(
         ...,
         min_length=3,
         max_length=50
@@ -18,9 +30,3 @@ class User(UserBase):
     )
 
 
-class UserRegister(UserBase):
-    password: str = Field(
-        ...,
-        min_length=4,
-        max_length=64
-    )

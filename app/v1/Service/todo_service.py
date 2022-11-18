@@ -1,4 +1,4 @@
-PENDIENTE DE ELIMINCACION 
+#PENDIENTE DE ELIMINCACION 
 
 from fastapi import HTTPException, status
 
